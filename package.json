@@ -4,7 +4,8 @@
   "description": "Mocha chai api test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test petstore": "mocha --spec test/chaiAssert.js --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
     "supertest": "^6.2.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.10"
+    "@babel/core": "^7.18.10",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
