@@ -1,5 +1,7 @@
 const { expect } = require('chai')
 const request = require('supertest')
+const data = require('../data/userData')
+
 
 describe('Chai Assert - Get Example', () => {
     const response = request ('https://petstore.swagger.io/v2')
@@ -18,16 +20,7 @@ describe('Chai Assert - Get Example', () => {
 describe('Post Request Example', () => {
     const response = request ('https://petstore.swagger.io/v2')
     .post('/user')
-    .send({
-        "id": 12345,
-        "username": "myskill",
-        "firstName": "myskill",
-        "lastName": "myskill",
-        "email": "myskill@mailsac.com",
-        "password": "myskill123",
-        "phone": "08123123",
-        "userStatus": 1
-      })
+    .send(data.CREATE_USER_DATA)
     it('response status equal to 200', async () => {
         expect((await response).status).to.equal(200)
     })
