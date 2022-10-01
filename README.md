@@ -5,7 +5,7 @@ Study case for My Skill course for API Automation Test (Modul 11) with mocha cha
 To run this repo
 1. Clone this repository
 ```
-git clone 
+git clone https://github.com/alvintrianto/myskill-api-test.git
 ```
 2. Open the folder with VS Code
 3. Install npm with
