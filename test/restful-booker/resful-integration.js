@@ -34,7 +34,7 @@ describe('RestFul Booker', async () => {
     })
 
     const resUpdateBooking = await request(baseUrl)
-    .post(`/booking/${bookingId}`)
+    .put(`/booking/${bookingId}`)
     .send(data.UPDATE_BOOKING_DATA)
     .set(
     { "Content-Type" : "application/json" }, 
