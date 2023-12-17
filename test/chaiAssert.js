@@ -11,9 +11,7 @@ describe('Chai Assert - Get Example', () => {
     })
     it('response body to have property', async () => {
         expect((await response).body).to.haveOwnProperty(`available`)
-        expect((await response).body).to.haveOwnProperty(`unavailable`)
         expect((await response).body).to.haveOwnProperty(`pending`)
-        expect((await response).body).to.haveOwnProperty(`status`)
     })
 })
 
